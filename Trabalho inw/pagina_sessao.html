@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema</title>
+</head>
+<body>
+  <form action="/sessao/incluir" method="POST">
+    <label for="idFilme">Código do filme</label>
+    <input type="number" id="idFilme" name="idFilme">
+    <label for="idSala">Código da sala</label>
+    <input type="number" id="idSala" name="isSala">
+    <label for="data">Data</label>
+    <input type="date" id="data" name="data">
+    <label for="horario">Horário</label>
+    <input type="datetime" id="horario" name="horario">
+    <label for="preco">Preço</label>
+    <input type="number" id="preco" name="preco">
+    <input type="submit" value="Incluir">
+  </form>
+  <form action="/sessao/listar" method="GET">
+    <label for="idFilme">Código do filme</label>
+    <input type="number" id="idFilme" name="idFilme">
+    <label for="idSala">Código da sala</label>
+    <input type="number" id="idSala" name="isSala">
+    <label for="data">Data</label>
+    <input type="date" id="data" name="data">
+    <label for="horario">Horário</label>
+    <input type="datetime" id="horario" name="horario">
+    <input type="submit" value="Incluir">
+  </form>
+  <form action="/sessao/listar/todos" method="GET">
+    <input type="submit" value="Incluir todos">
+  </form>
+  <form action="/sessao/alterar" method="PUT">
+    <label for="idFilme">Código do filme</label>
+    <input type="number" id="idFilme" name="idFilme">
+    <label for="idSala">Código da sala</label>
+    <input type="number" id="idSala" name="isSala">
+    <label for="data">Data</label>
+    <input type="date" id="data" name="data">
+    <label for="horario">Horário</label>
+    <input type="datetime" id="horario" name="horario">
+    <label for="preco">Preço</label>
+    <input type="number" id="preco" name="preco">
+    <input type="submit" value="Alterar">
+  </form>
+  <form action="/sessao/incluir" method="DELETE">
+    <label for="idFilme">Código do filme</label>
+    <input type="number" id="idFilme" name="idFilme">
+    <label for="idSala">Código da sala</label>
+    <input type="number" id="idSala" name="isSala">
+    <label for="data">Data</label>
+    <input type="date" id="data" name="data">
+    <label for="horario">Horário</label>
+    <input type="datetime" id="horario" name="horario">
+    <input type="submit" value="Excluir">
+  </form>
+</body>
+</html>
