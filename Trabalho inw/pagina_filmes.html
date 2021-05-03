@@ -4,28 +4,64 @@
 <head>
     <meta charset="utf-8">
     <title> Cinema</title>
-</head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>  
 <body>
-    <h1> Filme </h1>
-    <form>
-        <label for="idFilme">Código</label>
+    <h1> Incluir </h1>
+    <form action="/filme/incluir" method="POST">
+        <label for="idFilme">Código do filme</label>
         <input type="number" id="idFilme" name="idFilme">
-        <br>
         <label for="txtNome">Nome</label>
         <input type="text" id="txtNome" name="nomeCli">
-        <br>
-        <label for="txtAnodelançamento">Ano de lançamento </label>
-        <input type="text" id="txtanodelançamento" name="anodelançamentoCli">
-        <br>
+        <label for="anodelançamento">Ano de lançamento </label>
+        <input type="number" id="anodelançamento" name="anodelançamento">
         <label for="txtDiretor">Diretor</label>
         <input type="text" id="txtDiretor" name="diretorCli">
-        <br>
-        <label for="Atoresl">Acessível</label>
+        <label for="Atoresl">Atores</label>
         <input type="text" id="txtAtores" name="atoresCli">
-        <br>
-        <input type="submit">
+        <input type="submit" value="Incluir">
     </form>
+    <h1> Listar um</h1>
+    <form action="/filme/listar" method="GET">
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme">
+        <label for="txtNome">Nome</label>
+        <input type="text" id="txtNome" name="nomeCli">
+        <label for="anodelançamento">Ano de lançamento </label>
+        <input type="number" id="anodelançamento" name="anodelançamento">
+        <label for="txtDiretor">Diretor</label>
+        <input type="text" id="txtDiretor" name="diretorCli">
+        <label for="Atoresl">Atores</label>
+        <input type="text" id="txtAtores" name="atoresCli">
+        <input type="submit" value="Incluir">
+  </form>
+  <h1>Listar todos</h1>
+  <form action="/filme/listar/todos" method="GET">
+    <input type="submit" value="Listar todos">
+  </form>
+  <h1>Alterar</h1>
+  <form action="/filme/alterar" method="PUT">
+    <fieldset>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme">
+        <label for="txtNome">Nome</label>
+        <input type="text" id="txtNome" name="nomeCli">
+        <label for="anodelançamento">Ano de lançamento </label>
+        <input type="number" id="anodelançamento" name="anodelançamento">
+        <label for="txtDiretor">Diretor</label>
+        <input type="text" id="txtDiretor" name="diretorCli">
+        <label for="Atoresl">Atores</label>
+        <input type="text" id="txtAtores" name="atoresCli">
+    </fieldset>
+    <label for="idFilme">Código do filme</label>
+    <input type="number" id="idFilme" name="idFilme">
+    <input type="submit" value="Alterar">
+    <h1>Excluir</h1>
+  <form action="/filme/excluir" method="DELETE">
+     <label for="idFilme">Código do filme</label>
+     <input type="number" id="idFilme" name="idFilme">
+     <input type="submit" value="Excluir">
+  </form>
 </body>
 
 </html>
