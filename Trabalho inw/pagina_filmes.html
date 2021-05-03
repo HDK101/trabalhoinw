@@ -8,7 +8,8 @@
 </head>
 
 <body>
-  <h1> Incluir </h1>
+  <h1>Filmes</h1>
+  <h2> Incluir </h2>
   <form action="/filme/incluir" method="POST">
     <label for="idFilme">Código do filme</label>
     <input type="number" id="idFilme" name="idFilme">
@@ -22,7 +23,7 @@
     <input type="text" id="txtAtores" name="atoresCli">
     <input type="submit" value="Incluir">
   </form>
-  <h1> Listar um</h1>
+  <h2> Listar um</h2>
   <form action="/filme/listar" method="GET">
     <label for="idFilme">Código do filme</label>
     <input type="number" id="idFilme" name="idFilme">
@@ -36,12 +37,14 @@
     <input type="text" id="txtAtores" name="atoresCli">
     <input type="submit" value="Incluir">
   </form>
-  <h1>Listar todos</h1>
+  <h2>Listar todos</h2>
   <form action="/filme/listar/todos" method="GET">
     <input type="submit" value="Listar todos">
   </form>
-  <h1>Alterar</h1>
+  <h2>Alterar</h2>
   <form action="/filme/alterar" method="PUT">
+    <label for="idFilme">Código do filme</label>
+    <input type="number" id="idFilme" name="idFilme">
     <fieldset>
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme">
@@ -54,10 +57,8 @@
       <label for="Atoresl">Atores</label>
       <input type="text" id="txtAtores" name="atoresCli">
     </fieldset>
-    <label for="idFilme">Código do filme</label>
-    <input type="number" id="idFilme" name="idFilme">
     <input type="submit" value="Alterar">
-    <h1>Excluir</h1>
+    <h2>Excluir</h2>
     <form action="/filme/excluir" method="DELETE">
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme">
