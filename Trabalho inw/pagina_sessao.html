@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema</title>
 </head>
+
 <body>
-  <h1>Incluir</h1>
+  <h1>Sessões</h1>
+  <h2>Incluir</h2>
   <form action="/sessao/incluir" method="POST">
     <label for="idFilme">Código do filme</label>
     <input type="number" id="idFilme" name="idFilme">
@@ -31,11 +34,11 @@
     <input type="datetime" id="horario" name="horario">
     <input type="submit" value="Incluir">
   </form>
-  <h1>Listar todos</h1>
+  <h2>Listar todos</h2>
   <form action="/sessao/listar/todos" method="GET">
     <input type="submit" value="Incluir todos">
   </form>
-  <h1>Alterar</h1>
+  <h2>Alterar</h2>
   <form action="/sessao/alterar" method="PUT">
     <fieldset>
       <label for="idFilme">Código do filme</label>
@@ -47,11 +50,21 @@
       <label for="horario">Horário</label>
       <input type="datetime" id="horario" name="horario">
     </fieldset>
-    <label for="preco">Preço</label>
-    <input type="number" id="preco" name="preco">
+    <fieldset>
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme">
+      <label for="idSala">Código da sala</label>
+      <input type="number" id="idSala" name="isSala">
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data">
+      <label for="horario">Horário</label>
+      <input type="datetime" id="horario" name="horario">
+      <label for="preco">Preço</label>
+      <input type="number" id="preco" name="preco">
+    </fieldset>
     <input type="submit" value="Alterar">
   </form>
-  <h1>Excluir</h1>
+  <h2>Excluir</h2>
   <form action="/sessao/incluir" method="DELETE">
     <label for="idFilme">Código do filme</label>
     <input type="number" id="idFilme" name="idFilme">
@@ -64,4 +77,5 @@
     <input type="submit" value="Excluir">
   </form>
 </body>
+
 </html>
