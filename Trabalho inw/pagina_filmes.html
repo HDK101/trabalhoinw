@@ -5,9 +5,24 @@
   <meta charset="utf-8">
   <title> Cinema</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header style="color:rgb(253, 206, 86)">
+    <h1> Cinema Imaginario </h1>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="inicial_cinema.html">Menu inicial</a>
+      </li>
+      <li>
+        <a href="sair_cinema.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+
   <h1>Filmes</h1>
   <h2> Incluir </h2>
   <form action="/filme/incluir" method="POST">
@@ -43,9 +58,13 @@
   </form>
   <h2>Alterar</h2>
   <form action="/filme/alterar" method="PUT">
-    <label for="idFilme">Código do filme</label>
-    <input type="number" id="idFilme" name="idFilme"><br><br>
     <fieldset>
+      <legend>Identificar</legend>
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Alterar para</legend>
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme"><br><br>
       <label for="txtNome">Nome</label>
@@ -63,8 +82,6 @@
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme"><br><br>
       <input type="submit" value="Excluir"><br><br>
-      <a href="inicial_cinema.html">Menu inicial</a><br><br>
-      <a href="sair_cinema.html">Sair</a>
     </form>
 </body>
 

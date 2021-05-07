@@ -5,9 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header style="color:rgb(253, 206, 86)">
+    <h1> Cinema Imaginario </h1>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="inicial_cinema.html">Menu inicial</a>
+      </li>
+      <li>
+        <a href="sair_cinema.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+
   <h1>Sessões</h1>
   <h2>Incluir</h2>
   <form action="/sessao/incluir" method="POST">
@@ -41,6 +56,7 @@
   <h2>Alterar</h2>
   <form action="/sessao/alterar" method="PUT">
     <fieldset>
+      <legend>Identificar</legend>
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme"><br><br>
       <label for="idSala">Código da sala</label>
@@ -51,6 +67,7 @@
       <input type="datetime" id="horario" name="horario"><br><br>
     </fieldset>
     <fieldset>
+      <legend>Alterar para</legend>
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme"><br><br>
       <label for="idSala">Código da sala</label>
@@ -75,8 +92,6 @@
     <label for="horario">Horário</label>
     <input type="datetime" id="horario" name="horario"><br><br>
     <input type="submit" value="Excluir"><br><br>
-    <a href="inicial_cinema.html">Menu inicial</a><br><br>
-    <a href="sair_cinema.html">Sair</a>
   </form>
 </body>
 
