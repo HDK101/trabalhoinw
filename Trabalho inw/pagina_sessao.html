@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header style="color:rgb(253, 206, 86)">
+  <header >
     <h1> Cinema Imaginario </h1>
   </header>
   <nav>
@@ -23,51 +23,11 @@
     </ul>
   </nav>
 
-  <h1>Sessões</h1>
-  <h2>Incluir</h2>
-  <form action="/sessao/incluir" method="POST">
-    <label for="idFilme">Código do filme</label>
-    <input type="number" id="idFilme" name="idFilme"><br><br>
-    <label for="idSala">Código da sala</label>
-    <input type="number" id="idSala" name="isSala"><br><br>
-    <label for="data">Data</label>
-    <input type="date" id="data" name="data"><br><br>
-    <label for="horario">Horário</label>
-    <input type="datetime" id="horario" name="horario"><br><br>
-    <label for="preco">Preço</label>
-    <input type="number" id="preco" name="preco"><br><br>
-    <input type="submit" value="Incluir">
-  </form>
-  <form action="/sessao/listar" method="GET">
-    <label for="idFilme">Código do filme</label>
-    <input type="number" id="idFilme" name="idFilme"><br><br>
-    <label for="idSala">Código da sala</label>
-    <input type="number" id="idSala" name="isSala"><br><br>
-    <label for="data">Data</label>
-    <input type="date" id="data" name="data"><br><br>
-    <label for="horario">Horário</label>
-    <input type="datetime" id="horario" name="horario"><br><br>
-    <input type="submit" value="Incluir">
-  </form>
-  <h2>Listar todos</h2>
-  <form action="/sessao/listar/todos" method="GET">
-    <input type="submit" value="Incluir todos">
-  </form>
-  <h2>Alterar</h2>
-  <form action="/sessao/alterar" method="PUT">
-    <fieldset>
-      <legend>Identificar</legend>
-      <label for="idFilme">Código do filme</label>
-      <input type="number" id="idFilme" name="idFilme"><br><br>
-      <label for="idSala">Código da sala</label>
-      <input type="number" id="idSala" name="isSala"><br><br>
-      <label for="data">Data</label>
-      <input type="date" id="data" name="data"><br><br>
-      <label for="horario">Horário</label>
-      <input type="datetime" id="horario" name="horario"><br><br>
-    </fieldset>
-    <fieldset>
-      <legend>Alterar para</legend>
+  <section id="session-crud">
+
+    <h1>Sessões</h1>
+    <h2>Incluir</h2>
+    <form action="/sessao/incluir" method="POST">
       <label for="idFilme">Código do filme</label>
       <input type="number" id="idFilme" name="idFilme"><br><br>
       <label for="idSala">Código da sala</label>
@@ -78,21 +38,65 @@
       <input type="datetime" id="horario" name="horario"><br><br>
       <label for="preco">Preço</label>
       <input type="number" id="preco" name="preco"><br><br>
-    </fieldset>
-    <input type="submit" value="Alterar">
-  </form>
-  <h2>Excluir</h2>
-  <form action="/sessao/incluir" method="DELETE">
-    <label for="idFilme">Código do filme</label>
-    <input type="number" id="idFilme" name="idFilme"><br><br>
-    <label for="idSala">Código da sala</label>
-    <input type="number" id="idSala" name="isSala"><br><br>
-    <label for="data">Data</label>
-    <input type="date" id="data" name="data"><br><br>
-    <label for="horario">Horário</label>
-    <input type="datetime" id="horario" name="horario"><br><br>
-    <input type="submit" value="Excluir"><br><br>
-  </form>
+      <input type="submit" value="Incluir">
+    </form>
+    <form action="/sessao/listar" method="GET">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="idSala">Código da sala</label>
+      <input type="number" id="idSala" name="isSala"><br><br>
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data"><br><br>
+      <label for="horario">Horário</label>
+      <input type="datetime" id="horario" name="horario"><br><br>
+      <input type="submit" value="Incluir">
+    </form>
+    <h2>Listar todos</h2>
+    <form action="/sessao/listar/todos" method="GET">
+      <input type="submit" value="Incluir todos">
+    </form>
+    <h2>Alterar</h2>
+    <form action="/sessao/alterar" method="PUT">
+      <fieldset>
+        <legend>Identificar</legend>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+        <label for="idSala">Código da sala</label>
+        <input type="number" id="idSala" name="isSala"><br><br>
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data"><br><br>
+        <label for="horario">Horário</label>
+        <input type="datetime" id="horario" name="horario"><br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Alterar para</legend>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+        <label for="idSala">Código da sala</label>
+        <input type="number" id="idSala" name="isSala"><br><br>
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data"><br><br>
+        <label for="horario">Horário</label>
+        <input type="datetime" id="horario" name="horario"><br><br>
+        <label for="preco">Preço</label>
+        <input type="number" id="preco" name="preco"><br><br>
+      </fieldset>
+      <input type="submit" value="Alterar">
+    </form>
+    <h2>Excluir</h2>
+    <form action="/sessao/incluir" method="DELETE">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="idSala">Código da sala</label>
+      <input type="number" id="idSala" name="isSala"><br><br>
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data"><br><br>
+      <label for="horario">Horário</label>
+      <input type="datetime" id="horario" name="horario"><br><br>
+      <input type="submit" value="Excluir"><br><br>
+    </form>
 </body>
+
+</section>
 
 </html>
