@@ -5,26 +5,35 @@
     <meta charset="utf-8">
     <title> Cinema</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+         body{
+      font-family: "Times New Roman", Times, serif;
+      background-color: rgba(223, 216, 212, 0.3)
+    }
+    .titulo{
+       font-size: 50px;
+       text-align: center;
+       color:rgba(226, 47, 47, 0.883);
+       font-family: "Times New Roman", Times, serif;
+       font-weight: bold;
+       background-color: rgba(246, 86, 17, 0.26)}
+    .sub{
+      font-size: 40px;
+      text-align: center;}
+      nav{
+      font-size: 20px;
+    }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1> Cinema Imaginario </h1>
+        <h1 class="titulo"> Cinema Imaginario </h1>
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="inicial_cinema.html">Menu inicial</a>
-            </li>
-            <li>
-                <a href="sair_cinema.html">Sair</a>
-            </li>
-        </ul>
-    </nav>
     <section id="rooms-crud">
 
 
-        <h1>Salas</h1>
+        <h1 class="sub">Salas</h1>
         <h2>Incluir</h2>
         <form action="/salas/incluir" method="POST"></form>
         <label for="txtCódigo">Código da sala</label>
@@ -96,6 +105,17 @@
         </form>
         <br><br>
     </section>
+    <nav>
+        <ul>
+            <li>
+                <a href="inicial_cinema.html">Menu inicial</a>
+            </li>
+            <li>
+                <a href="sair_cinema.html">Sair</a>
+            </li>
+        </ul>
+    </nav>
+<br><br><br><br><br>
     <footer>
         Feito por Lucas Hideki e Ingrid Nery
     </footer>
