@@ -6,26 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+      body{
+            font-family: "Times New Roman", Times, serif;
+             background-color: rgba(223, 216, 212, 0.3)
+       }
+      .titulo{
+         font-size: 50px;
+         text-align: center;
+          color:rgba(226, 47, 47, 0.883);
+         font-family: "Times New Roman", Times, serif;
+         font-weight: bold;
+          background-color: rgba(246, 86, 17, 0.26)}
+     .sub{
+         font-size: 40px;
+         text-align: center;}
+      nav{
+         font-size: 20px;
+     }
+     label{
+        display:inline-block ;
+         width :120px;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <h1> Cinema Imaginario </h1>
+    <h1 class="titulo"> Cinema Imaginario </h1>
   </header>
-  <nav>
-    <ul>
-      <li>
-        <a href="inicial_cinema.html">Menu inicial</a>
-      </li>
-      <li>
-        <a href="sair_cinema.html">Sair</a>
-      </li>
-    </ul>
-  </nav>
-
   <section id="session-crud">
 
-    <h1>Sessões</h1>
+    <h1 class="sub">Sessões</h1>
     <h2>Incluir</h2>
     <form action="/sessao/incluir" method="POST">
       <label for="idFilme">Código do filme</label>
@@ -96,7 +108,16 @@
       <input type="submit" value="Excluir"><br><br>
     </form>
   </section>
-
+  <nav>
+    <ul>
+      <li>
+        <a href="inicial_cinema.html">Menu inicial</a>
+      </li>
+      <li>
+        <a href="sair_cinema.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
   <footer>
     Feito por Lucas Hideki e Ingrid Nery
   </footer>
