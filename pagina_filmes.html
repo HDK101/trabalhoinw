@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title> Cinema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body{
+      background-color: rgba(223, 216, 212, 0.3)
+    }
+    .titulo{
+       font-size: 50px;
+       text-align: center;
+       color:rgba(226, 47, 47, 0.883);
+       font-weight: bold;
+       background-color: rgba(246, 86, 17, 0.26)}
+    .sub{
+      font-size: 40px;
+      text-align: center;}
+    h2{
+      font-size: 20px;
+      color: rgb(3, 16, 41);
+
+    }
+    nav{
+      font-size: 25px;
+    }
+     label{
+      display:inline-block ;
+      width :120px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="titulo">Cinema Imaginario </h1>
+  </header>
+
+  <section id="movie-crud">
+    <h1 class="sub">Filmes</h1>
+    <h2> Incluir </h2>
+    <form action="/filme/incluir" method="POST">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="txtNome">Nome</label>
+      <input type="text" id="txtNome" name="nomeCli"><br><br>
+      <label for="anodelançamento">Ano de lançamento </label>
+      <input type="number" id="anodelançamento" name="anodelançamento"><br><br>
+      <label for="txtDiretor">Diretor</label>
+      <input type="text" id="txtDiretor" name="diretorCli"><br><br>
+      <label for="txtAtores">Atores</label>
+      <input type="text" id="txtAtores" name="atoresCli"><br><br>
+      <input type="submit" value="Incluir">
+    </form>
+    <h2> Listar um</h2>
+    <form action="/filme/listar" method="GET">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="txtNome">Nome</label>
+      <input type="text" id="txtNome" name="nomeCli"><br><br>
+      <label for="anodelançamento">Ano de lançamento </label>
+      <input type="number" id="anodelançamento" name="anodelançamento"><br><br>
+      <label for="txtDiretor">Diretor</label>
+      <input type="text" id="txtDiretor" name="diretorCli"><br><br>
+      <label for="txtAtores">Atores</label>
+      <input type="text" id="txtAtores" name="atoresCli"><br><br>
+      <input type="submit" value="Incluir">
+    </form>
+    <h2>Listar todos</h2>
+    <form action="/filme/listar/todos" method="GET">
+      <input type="submit" value="Listar todos">
+    </form>
+    <h2>Alterar</h2>
+    <form action="/filme/alterar" method="PUT">
+      <fieldset>
+        <legend>Identificar</legend>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Alterar para</legend>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+        <label for="txtNome">Nome</label>
+        <input type="text" id="txtNome" name="nomeCli"><br><br>
+        <label for="anodelançamento">Ano de lançamento </label>
+        <input type="number" id="anodelançamento" name="anodelançamento"><br><br>
+        <label for="txtDiretor">Diretor</label>
+        <input type="text" id="txtDiretor" name="diretorCli"><br><br>
+        <label for="txtAtores">Atores</label>
+        <input type="text" id="txtAtores" name="atoresCli"><br><br>
+      </fieldset>
+      <input type="submit" value="Alterar">
+      <h2>Excluir</h2>
+      <form action="/filme/excluir" method="DELETE">
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+        <input type="submit" value="Excluir"><br><br>
+      </form>
+  </section>
+  <nav>
+    <ul>
+      <li>
+        <a href="inicial_cinema.html">Menu inicial</a>
+      </li>
+      <li>
+        <a href="sair_cinema.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+  <footer>
+    Feito por Lucas Hideki e Ingrid Nery
+  </footer>
+</body>
+
+</html>

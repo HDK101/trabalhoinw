@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+      body{
+             background-color: rgba(223, 216, 212, 0.3)
+       }
+      .titulo{
+         font-size: 50px;
+         text-align: center;
+          color:rgba(226, 47, 47, 0.883);
+         font-weight: bold;
+          background-color: rgba(246, 86, 17, 0.26)}
+     .sub{
+         font-size: 40px;
+         text-align: center;}
+      nav{
+         font-size: 20px;
+     }
+     label{
+        display:inline-block ;
+         width :120px;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="titulo"> Cinema Imaginario </h1>
+  </header>
+  <section id="session-crud">
+
+    <h1 class="sub">Sessões</h1>
+    <h2>Incluir</h2>
+    <form action="/sessao/incluir" method="POST">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="idSala">Código da sala</label>
+      <input type="number" id="idSala" name="isSala"><br><br>
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data"><br><br>
+      <label for="horario">Horário</label>
+      <input type="datetime" id="horario" name="horario"><br><br>
+      <label for="preco">Preço</label>
+      <input type="number" id="preco" name="preco"><br><br>
+      <input type="submit" value="Incluir">
+    </form>
+    <form action="/sessao/listar" method="GET">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="idSala">Código da sala</label>
+      <input type="number" id="idSala" name="isSala"><br><br>
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data"><br><br>
+      <label for="horario">Horário</label>
+      <input type="datetime" id="horario" name="horario"><br><br>
+      <input type="submit" value="Incluir">
+    </form>
+    <h2>Listar todos</h2>
+    <form action="/sessao/listar/todos" method="GET">
+      <input type="submit" value="Incluir todos">
+    </form>
+    <h2>Alterar</h2>
+    <form action="/sessao/alterar" method="PUT">
+      <fieldset>
+        <legend>Identificar</legend>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+        <label for="idSala">Código da sala</label>
+        <input type="number" id="idSala" name="isSala"><br><br>
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data"><br><br>
+        <label for="horario">Horário</label>
+        <input type="datetime" id="horario" name="horario"><br><br>
+      </fieldset>
+      <fieldset>
+        <legend>Alterar para</legend>
+        <label for="idFilme">Código do filme</label>
+        <input type="number" id="idFilme" name="idFilme"><br><br>
+        <label for="idSala">Código da sala</label>
+        <input type="number" id="idSala" name="isSala"><br><br>
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data"><br><br>
+        <label for="horario">Horário</label>
+        <input type="datetime" id="horario" name="horario"><br><br>
+        <label for="preco">Preço</label>
+        <input type="number" id="preco" name="preco"><br><br>
+      </fieldset>
+      <input type="submit" value="Alterar">
+    </form>
+    <h2>Excluir</h2>
+    <form action="/sessao/incluir" method="DELETE">
+      <label for="idFilme">Código do filme</label>
+      <input type="number" id="idFilme" name="idFilme"><br><br>
+      <label for="idSala">Código da sala</label>
+      <input type="number" id="idSala" name="isSala"><br><br>
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data"><br><br>
+      <label for="horario">Horário</label>
+      <input type="datetime" id="horario" name="horario"><br><br>
+      <input type="submit" value="Excluir"><br><br>
+    </form>
+  </section>
+  <nav>
+    <ul>
+      <li>
+        <a href="inicial_cinema.html">Menu inicial</a>
+      </li>
+      <li>
+        <a href="sair_cinema.html">Sair</a>
+      </li>
+    </ul>
+  </nav>
+  <footer>
+    Feito por Lucas Hideki e Ingrid Nery
+  </footer>
+</body>
+
+
+</html>

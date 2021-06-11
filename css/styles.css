@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Mate SC', 'serif';
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 0 10%;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date] {
+  border: solid 2px rgb(196, 196, 196);
+  height: 30px;
+}
+
+select {
+  border: solid 2px rgb(223, 223, 223);
+  height: 30px;
+  background-color: rgb(223, 223, 223);
+}
+
+input[type=submit] {
+  height: 34px;
+  width: 100px;
+  background-color: black;
+  border: solid 2px black;
+  color: white;
+}
+
+fieldset {
+  margin: 10px 0px;
+}
+
+footer {
+  background-color: rgb(128, 36, 20);
+  color:rgb(253, 206, 86);
+  padding: 30px 0px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a0a0a0
+}
+
+nav {
+  margin-left: 10%;
+}
